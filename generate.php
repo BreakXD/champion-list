@@ -1,5 +1,7 @@
 <?php
 
+$botType = false; //True = returns (Champion Name + Bot)
+
 $version = '10.25';
 $language = 'en_US';
 
@@ -21,8 +23,11 @@ for($i = 0;$i < $numchamps; $i++){
 	$champname = $champsdata[$values[$i]['id']]['id'];
 	$botname = $champname.' Script';
 
-	echo (htmlentities($champname).'<br>');
-
+	if(!$botType){
+		echo (htmlentities($champname).'<br>');
+	}else{
+		echo (htmlentities($champname.' Bot').'<br>');
+	}
 }
 
 
