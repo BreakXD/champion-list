@@ -1,8 +1,9 @@
 <?php
 
 $version = '10.25';
+$language = 'en_US';
 
-$urlchamp = 'http://ddragon.leagueoflegends.com/cdn/'.$version.'.1/data/en_US/champion.json'; 
+$urlchamp = 'http://ddragon.leagueoflegends.com/cdn/'.$version.'.1/data/'.$language.'/champion.json'; 
 
 $champsjson = file_get_contents($urlchamp);
 
